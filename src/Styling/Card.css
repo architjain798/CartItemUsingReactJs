@@ -1,0 +1,38 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.container {
+  width: 25em;
+  height: 50%;
+  background-color: rgb(119, 213, 250);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1%;
+  margin: 1%;
+}
+.right-div {
+  background-color: rgb(211, 211, 243);
+}
+.left-div {
+  background-image: url(https://static.toiimg.com/photo/73078527.cms);
+  background-repeat: round;
+  background-size: cover, contain;
+}
+.box {
+  width: 100em;
+  height: 10em;
+  margin: 1%;
+  padding: 1%;
+  border: 2px solid blue;
+  border-radius: 15%;
+}
+.heading {
+  text-align: left;
+  padding: 3%;
+}
+.icon-s {
+  margin: 3%;
+}
