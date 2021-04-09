@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "../Styling/Card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -27,13 +26,17 @@ class CartItem extends React.Component {
   };
 
   render() {
-    const { MobileName, Price, Qty } = this.state;
+    console.log(this.props);
+    const { MobileName, Price, Qty, Image } = this.props.product;
     return (
       <div className="container">
-        <div className="left-div box"></div>
+        <div
+          className="left-div box"
+          style={{ backgroundImage: `url(${Image}` }}
+        ></div>
         <div className="right-div box">
           <h2 className="heading">{MobileName}</h2>
-          <h3 className="heading">{Price}</h3>
+          <h3 className="heading">Price : Rs {Price}</h3>
           <h3 className="heading">Qty:{Qty}</h3>
           <FontAwesomeIcon
             icon={faPlusCircle}
